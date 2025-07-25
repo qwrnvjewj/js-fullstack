@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  <header class="header">
+    <div class="container">
+      <h1>Навігація по сайту</h1>
+      <nav class="main-nav">
+        <ol class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Головна</a></li>
+          <li class="nav-item"><a class="nav-link" href="./articles.html">Статті</a></li>
+          <li class="nav-item"><a class="nav-link" href="./catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакти</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="./page-nav.html">Навігація</a></li>
+          <li class="nav-item"><a class="nav-link" href="./registration.html">Реєстрація</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content container">
+    <div>
+      <h2>Адреса</h2>
+      <p>Донецька область, Покровський район, смт. Новоекономічне</p>
+    </div>
+
+    <div>
+      <h2>Як нас знайти</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42443.35182339183!2d37.282775007738806!3d48.32766664362947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40de342fd5a5a147%3A0x64862b8b307da4b2!2z0J3QvtCy0L7QtdC60L7QvdC-0LzRltGH0L3QtSwg0JTQvtC90LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgODUzNDA!5e0!3m2!1suk!2sua!4v1752752543349!5m2!1suk!2sua"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="form-group">
+      <h2>Зворотній зв'язок</h2>
+      <form action="https://tests.fomenko.top/echo/index.php" method="get" enctype="multipart/form-data">
+        <fieldset class="form-style">
+          <legend>Контактна інформація</legend>
+          <div>
+            <label class="label-form" for="tel">Номер телефону</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]+" required>
+          </div>
+
+          <div>
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div>
+            <label class="label-form" for="message">Повідомлення</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <div>
+            <button class="btn" type="submit">Відправити</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="footer">
+      <p>&copy; 2025 Мій Сайт</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

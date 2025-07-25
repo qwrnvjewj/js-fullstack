@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  <header class="header">
+    <div class="container">
+      <h1>Навігація по сайту</h1>
+      <nav class="main-nav">
+        <ol class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Головна</a></li>
+          <li class="nav-item"><a class="nav-link" href="./articles.html">Статті</a></li>
+          <li class="nav-item"><a class="nav-link" href="./catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакти</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="./page-nav.html">Навігація</a></li>
+          <li class="nav-item"><a class="nav-link" href="./registration.html">Реєстрація</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content container">
+    <h2>Реєстрація</h2>
+
+    <form action="https://tests.fomenko.top/echo/index.php" method="get" enctype="multipart/form-data">
+
+      <fieldset class="form-style">
+        <legend>Основна інформація</legend>
+
+        <div class="form-group">
+          <label class="label-form" for="fullname">ПІБ</label>
+          <input class="input-name" id="fullname" type="text" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label class="label-form" for="photo">Фото</label>
+          <input id="photo" type="file" name="photo">
+        </div>
+
+        <div class="form-group">
+          <label class="label-form" for="email">Пошта</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label class="label-form" for="password">Пароль</label>
+          <input id="password" type="password" name="password" required>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form-style">
+        <legend>Додаткова інформація</legend>
+
+        <div class="form-group">
+          <label class="label-form" for="website">Адреса сайту</label>
+          <input id="website" type="url" name="website" value="https://mysite.name">
+        </div>
+
+        <div class="form-group">
+          <div class="label-form">
+            Укажите ваш пол
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <label for="gender-male">
+            <input type="radio" id="gender-male" name="gender" value="male">
+            Чоловіча
+          </label>
+          <label for="gender-female">
+            <input type="radio" id="gender-female" name="gender" value="female">
+            Жіноча
+          </label>
+          <label for="gender-other">
+            <input type="radio" id="gender-other" name="gender" value="other">
+            Інше
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="label-form" for="birthdate">Дата народження</label>
+          <input id="birthdate" type="date" name="birthdate">
+        </div>
+
+        <div class="form-group">
+          <div class="label-form">
+            Оберіть вашу бригаду
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="ua-kit" value="ua">
+            <label for="ua-kit">47</label>
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="fr-kit" value="fr">
+            <label for="fr-kit">59</label>
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="it-kit" value="it">
+            <label for="it-kit">НГУ 12</label>
+          </div>
+        </div>
+
+        <div сlass="form-group">
+          <label class="label-form" for="about">Про себе</label>
+          <textarea id="about" rows="5" cols="40" placeholder="Напишіть щось про себе..." name="about"></textarea>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form-style">
+        <legend>Відправити</legend>
+
+        <div class="form-group">
+          <button class="btn" type="submit">Зареєструватися</button>
+          <button class="btn" type="reset">Очистити форму</button>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="container">
+    <footer class="footer">
+      <p>&copy; 2025 Мій Сайт</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

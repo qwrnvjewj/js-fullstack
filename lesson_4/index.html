@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <p>застосовуэться до тега p вага 1</p>
+
+  <p class="weight-10">застосовуэться до классу weight-10 вага 10</p>
+
+  <p id="weight-100">застосовуэться до елементу з id weight-100 вага 100</p>
+
+  <ul>
+    <li>застосовуэться до дочірнього тега li всередині ul вага 2</li>
+  </ul>
+
+  <div><span>застосовуэться до тега span всередині div вага 2</span></div>
+
+  <p class="weight-11">застосовуэться до тегу p з классом weight-11 вага 11</p>
+
+  <div data-topic="history">застосовуэться до атрибуту data-topic вага 10</div>
+
+  <div class="weight-10" data-topic="history">застосовуэться до тега div з елементами
+    class data-topic вага 21</div>
+
+  <div id="main-section">
+    <div class="content">
+      <p class="highlighted">застосовується до тега p з класом всередині елемента з .content всередині елемента з
+        #main-section вага 121
+      </p>
+    </div>
+  </div>
+
+  <div class="container" data-topic="history">
+    <div class="content">
+      <p>Застосовується до тега p всередині .content вкладеного в .container з атрибутом data-topic вага 31</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

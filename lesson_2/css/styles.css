@@ -1,0 +1,457 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #537d5d;
+  color: black;
+}
+
+h1 {
+  background-color: #537d5d;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  position: relative;
+  padding-left: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #537d5d;
+  max-width: 1280px;
+}
+
+.bg-image {
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #537d5d;
+  background-image: url(../assets/img/wallpaper_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.bg-overlay {
+  z-index: -1;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(225, 225, 225, 0.7);
+  margin: 0;
+  background-image: url(../assets/img/wallpaper_1.jpg);
+}
+
+.bg-image-gallery {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-image: url(../assets/img/wallpaper_2.jpeg);
+  background-color: #537d5d;
+  z-index: -1;
+}
+
+.bg-overlay-gallery {
+  z-index: -1;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(225, 225, 225, 0.7);
+  margin: 0;
+  background-image: url(../assets/img/wallpaper_2.jpeg);
+  background-size: 300px 300px;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 100vw;
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  min-height: calc(100vh - 100px - 100px);
+  background-color: #b8bca873;
+  margin-top: 160px;
+  margin-bottom: 100px;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+.main-nav {
+  background-color: #537d5d;
+  color: black;
+  padding: 40px 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-item {
+  background-color: #b8bca861;
+}
+
+.nav-link {
+  display: block;
+  transition: 0.3s;
+  padding: 0.75em 1em;
+  background-color: #3d4d3a;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #4a5b48;
+  scale: 1.3;
+  translate: 0 -5px;
+}
+
+.catalog-list,
+.catalog-sublist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-list {
+  background-color: #3d4d3a;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.catalog-sublist {
+  background-color: #4a5b48;
+  width: 100%;
+  padding: 10px;
+}
+
+.catalog-list > li {
+  margin-bottom: 30px;
+}
+
+.magura,
+.brigade-59,
+.azov {
+  position: relative;
+  padding-left: 32px;
+  display: inline-block;
+  text-align: left;
+}
+
+.magura::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/41/47_Logo_23_RGB_Black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brigade-59::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/da/59th_Separate_Motorized_Infantry_Brigade_SSI_%28with_tab%29.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.azov::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/84/12th_Special_Purpose_Brigade_%27Azov%27_Insignia_-_First_Variant.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-sublist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #537d5d;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.catalog-sublist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+
+.catalog-sublist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_the_Ukrainian_Armed_Forces.svg/1200px-Emblem_of_the_Ukrainian_Armed_Forces.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.catalog-sublist li.new::before {
+  background-image: url("https://png.klev.club/uploads/posts/2024-04/png-klev-club-eimr-p-nyu-png-2.png");
+}
+
+.articles-title {
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid #537d5d;
+  color: blue;
+}
+
+.articles-read-more {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
+
+.articles-read-more:hover {
+  color: blue;
+  scale: 1.3;
+  translate: 0 -5px;
+  border-bottom: 0;
+}
+
+.articles-comments {
+  color: pink;
+}
+
+.articles-description {
+  color: aquamarine;
+  background-color: navy;
+  display: inline;
+}
+
+.content-list {
+  display: inline-block;
+  text-align: left;
+  padding-left: 0;
+}
+
+.name-of-the-article {
+  text-align: center;
+}
+
+.article-section::first-letter {
+  color: teal;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.gallery-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gallery-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-item {
+  width: 300px;
+  height: 300px;
+  border: 20px solid green;
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  border-color: transparent;
+}
+
+.gallery-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  gap: 10px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 20px;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  border: 1px solid;
+}
+
+.btn:hover {
+  color: black;
+  background-color: #537d5d;
+}
+
+.form-style {
+  background-color: #537d5d;
+  color: black;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: black;
+  text-transform: uppercase;
+}
+
+.input-name {
+  text-transform: capitalize;
+}
+
+input[type="checkbox"]:hover {
+  outline: 2px dotted #000;
+  outline-offset: 3px;
+  cursor: pointer;
+}
+
+input[type="radio"]:hover {
+  outline: 2px dotted #000;
+  outline-offset: 3px;
+  cursor: pointer;
+}
+
+#comments {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.comment-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comment-author {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comment-body {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.comment-body img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.comment-actions a {
+  color: #0645ad;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.comments-title {
+  text-align: center;
+}
